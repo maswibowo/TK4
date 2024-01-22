@@ -1,5 +1,4 @@
-public class SalesTrainee implements Visitable{
-
+public class SalesTrainee implements Visitable {
     private int sickDays;
     private int failedTests;
     private double salary;
@@ -10,29 +9,32 @@ public class SalesTrainee implements Visitable{
         this.salary = salary;
     }
 
-    public double accept(Visitor visitor){
-
+    public double accept(Visitor visitor) {
         return visitor.visit(this);
-
     }
 
+    // Getters and setters
     public int getSickDays() {
         return sickDays;
     }
+
     public void setSickDays(int sickDays) {
         this.sickDays = sickDays;
     }
+
     public int getFailedTests() {
         return failedTests;
     }
+
     public void setFailedTests(int failedTests) {
         this.failedTests = failedTests;
     }
+
     public double getSalary() {
         return salary;
     }
+
     public void setSalary(double salary) {
         this.salary = salary;
     }
-
 }
