@@ -1,5 +1,4 @@
-public class Salesman implements Visitable{
-
+public class Salesman implements Visitable {
     private double totalSalesAmount;
     private int newCustomers;
 
@@ -8,10 +7,8 @@ public class Salesman implements Visitable{
         this.newCustomers = newCustomers;
     }
 
-    public double accept(Visitor visitor){
-
+    public double accept(Visitor visitor) {
         return visitor.visit(this);
-
     }
 
     public double getTotalSalesAmount() {
@@ -29,5 +26,4 @@ public class Salesman implements Visitable{
     public void setNewCustomers(int newCustomers) {
         this.newCustomers = newCustomers;
     }
-
 }
